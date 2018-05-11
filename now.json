@@ -1,0 +1,7 @@
+{
+  "env": {
+    "CTF_SPACE_ID": "@ctf_space_id",
+    "CTF_CDA_TOKEN": "@ctf_cda_token",
+    "CTF_CPA_TOKEN": "@ctf_cpa_token"
+  }
+}

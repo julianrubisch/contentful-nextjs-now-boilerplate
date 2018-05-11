@@ -1,0 +1,14 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding-top: 75px;
+
+  #__next {
+    height: 100%;
+  }
+}
