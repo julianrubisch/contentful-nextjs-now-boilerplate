@@ -9,9 +9,10 @@ app.prepare()
   .then(() => {
     const server = express();
 
-    server.get('/event/:slug', (req, res) => {
-      const actualPage = '/event';
-      const queryParams = { slug: req.params.slug };
+    /** EXAMPLE ROUTE */
+    server.get('/a/:id', (req, res) => {
+      const actualPage = '/article';
+      const queryParams = { id: req.params.id };
       app.render(req, res, actualPage, queryParams);
     });
 
