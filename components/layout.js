@@ -1,9 +1,16 @@
 /* eslint-disable no-undef, no-unused-vars */
 import Head from 'next/head';
 import React from 'react';
+import NProgress from 'nprogress';
+import Router from 'next/router';
 
 import stylesheet from '../styles/index.scss';
 
+Router.onRouteChangeStart = (url) => {
+  NProgress.start();
+};
+Router.onRouteChangeComplete = () => NProgress.done();
+Router.onRouteChangeError = () => NProgress.done();
 
 class Layout extends React.Component {
 

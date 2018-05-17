@@ -1,5 +1,6 @@
 @import "custom";
 @import "~bootstrap/scss/bootstrap";
+@import "nprogress/nprogress.css";
 
 html, body {
   height: 100%;
@@ -10,5 +11,20 @@ body {
 
   #__next {
     height: 100%;
+  }
+}
+
+#nprogress {
+  .bar {
+    background: #000;
+  }
+
+  .spinner-icon {
+    border-top-color: #000;
+    border-left-color: #000;  
+  }
+
+  .peg {
+    box-shadow: 0 0 10px #000, 0 0 5px #000;
   }
 }
